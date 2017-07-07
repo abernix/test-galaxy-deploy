@@ -1,0 +1,13 @@
+dependencies:
+  cache_directories:
+    - "dev_bundle"
+    - ".meteor"
+    - "~/.meteorsession"
+    - ".babel-cache"
+  override:
+    - curl https://install.meteor.com/ | sh
+
+test:
+  override:
+    - meteor --version
+    - mkdir test-app && cd test-app && meteor create . && meteor build ../built
