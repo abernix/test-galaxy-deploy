@@ -10,4 +10,4 @@ dependencies:
 test:
   override:
     - meteor --version
-    - mkdir test-app && cd test-app && meteor create . && meteor build ../built
+    - mkdir test-app && cd test-app && meteor create . && meteor deploy abernix-test-galaxy-deploy.meteor.com
